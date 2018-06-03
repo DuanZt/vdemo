@@ -1,23 +1,15 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <ul>
-      <li>
-        <router-link to="/home">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/user/duan">USER</router-link>
-      </li>
-    </ul>
+    <h1>User: {{ $route.params.username }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'user',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'VUE'
     }
   }
 }
